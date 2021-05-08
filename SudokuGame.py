@@ -6,6 +6,7 @@ playableboard = []
 playboard = []
 check_board = []
 inint = []
+numbtodel = []
 regret_line = ["a"]
 
 
@@ -40,7 +41,7 @@ def choose_level():
 
 #get random board from csv file and generate random blanks according to input.
 def get_board(difficulty):
-    with open('sodukoboards.csv', newline="") as f:
+    with open('sudokuboards.csv', newline="") as f:
     
         reader = csv.reader(f)
         logs = list(reader)
@@ -50,6 +51,7 @@ def get_board(difficulty):
     global check_board
     global playboard
     global original_board
+    global numbtodel
     playboard = logs[select_board]
     check_board = logs[select_board]
     

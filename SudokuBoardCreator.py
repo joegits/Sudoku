@@ -166,7 +166,7 @@ while cykels <= amount:
         for i in board:
             print(i)
         cykels += 1
-        with open('sodukoboards.csv', 'a+') as csvfile:
+        with open('sudokuboards.csv', 'a+') as csvfile:
             filewriter = csv.writer(csvfile)
 # delimiter=',')
             filewriter.writerow(board)
